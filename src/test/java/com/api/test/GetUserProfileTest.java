@@ -2,26 +2,32 @@ package com.api.test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import com.api.base.UserService;
 import com.api.models.request.LoginRequest;
 import com.api.models.response.LoginRespons;
+
 import io.restassured.response.Response;
-public class LoginAPITests {
+
+public class GetUserProfileTest {
 	
-	@Test(description="Verify if login api is working!!!")
-	public void LoginTest()
+	@Test(description="Verify if get user profile api is working!!!")
+	public void GetUserProfileTest()
 	{
 		LoginRequest loginRequest = new LoginRequest("sahusmrutikanta@gmail.com", "Smruti1234");
 		UserService userService = new UserService();
 		
 		Response res = userService.Login(loginRequest);
-		//De-serialization
+		// Deserialization
 		LoginRespons loginResponse = res.as(LoginRespons.class);
 		
-		System.out.println(res.asPrettyString());
+		//System.out.println(res.asPrettyString());
 		System.out.println(loginResponse.getToken());
-		System.out.println(loginResponse.getUser().getEmail());
-		Assert.assertEquals(res.getStatusCode(), 200);
-		Assert.assertTrue(loginResponse.getToken()!=null);
+		
+		Response userProfileResponse = userService.GetUserProfile(loginResponse.getToken());
+		System.out.println(userProfileResponse.asPrettyString());
+		Assert.assertEquals(userProfileResponse.getStatusCode(), 200);
+		// Here app is not giving any json format response so we did not go for any de-serialization
 	}
+
 }
