@@ -1,0 +1,36 @@
+2026-01-16 20:24:40 INFO  TestListener - Test suite started!!!
+2026-01-16 20:24:40 INFO  TestListener - Test Started!!LoginTest
+2026-01-16 20:24:43 INFO  TestListener - Passed!!LoginTest
+2026-01-16 20:24:43 INFO  TestListener - Description!!Verify if login api is working!!!
+2026-01-16 20:24:43 INFO  TestListener - Test suite started!!!
+2026-01-16 20:52:02 INFO  TestListener - Test suite started!!!
+2026-01-16 20:52:02 INFO  TestListener - Test Started!!LoginTest
+2026-01-16 20:52:03 INFO  LoggingFilter - BASE_URI:https://thinking-tester-contact-list.herokuapp.com/
+2026-01-16 20:52:03 INFO  LoggingFilter - Request Header:Accept=*/*
+Content-Type=application/json
+2026-01-16 20:52:03 INFO  LoggingFilter - Request Body:{"email":"sahusmrutikanta@gmail.com","password":"Smruti1234"}
+2026-01-16 20:52:06 INFO  LoggingFilter - Status code:200
+2026-01-16 20:52:06 INFO  LoggingFilter - Response body:{
+    "user": {
+        "_id": "6968cb8daad1940015f68614",
+        "firstName": "Smruti",
+        "lastName": "Sahu",
+        "email": "sahusmrutikanta@gmail.com",
+        "__v": 35
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTY4Y2I4ZGFhZDE5NDAwMTVmNjg2MTQiLCJpYXQiOjE3Njg1NzY5MjV9.d_jx9HDt4bI-a6Tp3lT2PQ56csHX7FgnKpcA7V5aobI"
+}
+2026-01-16 20:52:06 INFO  LoggingFilter - Response header:Content-Length=287
+Content-Type=application/json; charset=utf-8
+Date=Fri, 16 Jan 2026 15:22:05 GMT
+Etag=W/"11f-0zKABkMGqql2yeSoIk85ySZqtAI"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=z8VE%2BObvvpY0bvmt7fOpr5Hj3QXB%2F0bXTKjGslaILTE%3D\u0026sid=af571f24-03ee-46d1-9f90-ab9030c2c74c\u0026ts=1768576925"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=z8VE%2BObvvpY0bvmt7fOpr5Hj3QXB%2F0bXTKjGslaILTE%3D&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&ts=1768576925"
+Server=Heroku
+Set-Cookie=token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTY4Y2I4ZGFhZDE5NDAwMTVmNjg2MTQiLCJpYXQiOjE3Njg1NzY5MjV9.d_jx9HDt4bI-a6Tp3lT2PQ56csHX7FgnKpcA7V5aobI; Max-Age=36000; Path=/; Expires=Sat, 17 Jan 2026 01:22:05 GMT
+Via=1.1 heroku-router
+X-Powered-By=Express
+2026-01-16 20:52:06 INFO  TestListener - Passed!!LoginTest
+2026-01-16 20:52:06 INFO  TestListener - Description!!Verify if login api is working!!!
+2026-01-16 20:52:06 INFO  TestListener - Test suite finished!!!

@@ -1,6 +1,7 @@
 package com.api.test;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.base.UserService;
@@ -9,6 +10,7 @@ import com.api.models.response.LoginRespons;
 
 import io.restassured.response.Response;
 
+@Listeners(com.api.listeners.TestListener.class)
 public class GetUserProfileTest {
 	
 	@Test(description="Verify if get user profile api is working!!!")
